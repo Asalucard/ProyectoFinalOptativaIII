@@ -1,18 +1,24 @@
-            body, html {
-    height: 90%;
-    width: 100%;
- 
-    margin: 0;
+header {
+    display:block;
+    padding:10px 0px;
 }
 
-.Fondo {
-    /* The image used */
-    background-image: url("../Imagenes/pollo background.jpg");
-  /* Full height */
-    height: 100%; 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 333px;
+    
+}
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+footer {
+    position: relative;
+    margin-top: 450px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: #000;
+    text-align: center;
+    color: #fff;
 }
