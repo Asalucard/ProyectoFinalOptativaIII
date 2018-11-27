@@ -1,60 +1,179 @@
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+ 
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+    
+}
+ 
+header {
+      font-family: "Helvetica Neue",sans-serif;
+      font-size: xx-large;
+      width: 100%;
+      height: 100vh;
+      background: url(../Imagenes/Chicken-Wallpapers-HD.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+ 
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+ 
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: -7px 15px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+ 
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+ 
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0,0,0,0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
 }
 
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+nav.black ul {
+    
+      background: #fff;
+}
+ 
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+ 
+nav ul li a {
+    
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      padding: 12px 30px;
+      transition: 0.3s;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
+nav ul li a:focus{
     outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+nav ul li a.active{
+    background: #000;
+    color:#fb044a;
+    border-radius: 5px;
 }
 
-.dropdown-content {
-    display: none;
+nav ul li a.active2{
+    background: #000;
+    border-radius: 6px;
+}
+ 
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+ 
+@media(max-width: 786px) {
+ 
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+           
+      }
+ 
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+ 
+      nav.black ul {
+          
+            background: #000;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+      }
+ 
+}
+
+.btn{
+    
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin :10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1{
+    color: #000;
+
+}
+.btn1:hover{
+    color: #fb044a;
+}
+.btn::before{
+    content: "";
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    left:0;
+    width: 100%;
+    height: 0%;
+    background: #fb044a;
+    z-index: -1;  
+    transition: 0.8s;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.btn::before{
+    top:0;
+    border-radius:  0 0 50% 50%;
 }
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.btn1:hover::before{
+    height: 180%;
 }
