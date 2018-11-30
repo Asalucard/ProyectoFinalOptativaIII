@@ -9,9 +9,18 @@ img {
     margin-right: auto;
     height: 400px;
     width: 333px;
+}
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+      font-family: "Helvetica Neue",sans-serif;
+      font-size: xx-large;
+      width: 100%;
+      height: 100vh;
+      background: url(../Imagenes/Chicken-Wallpapers-HD.jpg) no-repeat 50% 50%;
+      background-size: cover;
     
 }
-
 footer {
     position: relative;
     margin-top: 450px;
@@ -20,5 +29,26 @@ footer {
     clear: both;
     background: #000;
     text-align: center;
-    color: #fff;
+    color: #fb044a;
+}
+
+section{
+    padding-top: 350px;
+    padding-left: 180px;
+    width: 45%;
+    height: 50%;
+}
+.ImagenAvatar{
+    width: 100%;
+    height: 100%;
+}
+
+.formAnimacion{
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-iteration-count: 1;
+}
+     img {
+    max-width: 100%;
+    height: auto;
 }

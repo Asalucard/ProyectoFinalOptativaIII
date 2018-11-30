@@ -3,24 +3,9 @@ html, body {
       padding: 0;
       width: 100%;
 }
- 
-body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
-    
-}
- 
-header {
-      font-family: "Helvetica Neue",sans-serif;
-      font-size: xx-large;
-      width: 100%;
-      height: 100vh;
-      background: url(../Imagenes/Chicken-Wallpapers-HD.jpg) no-repeat 50% 50%;
-      background-size: cover;
-}
- 
+
 .content {
-      width: 94%;
+      width: 100%;
       margin: 4em auto;
       font-size: 20px;
       line-height: 30px;
@@ -50,10 +35,10 @@ nav ul {
       background: rgba(0,0,0,0);
       overflow: hidden;
       color: #fff;
-      padding: 0;
+      padding: -35px;
       text-align: right;
-      margin: 0;
-      padding-right: 40px;
+      margin: -5px;
+      padding-right: 50px;
       transition: 1s;
 }
 
@@ -81,16 +66,6 @@ nav ul li a:focus{
     outline: none;
 }
 
-nav ul li a.active{
-    background: #000;
-    color:#fb044a;
-    border-radius: 5px;
-}
-
-nav ul li a.active2{
-    background: #000;
-    border-radius: 6px;
-}
  
 .menu-icon {
       line-height: 60px;
@@ -143,8 +118,8 @@ nav ul li a.active2{
 .btn{
     
     border: 1px solid #3498db;
-    background: none;
-    padding: 10px 20px;
+    background: #3498db;
+    padding: 15px 20px;
     font-family: "montserrat";
     cursor: pointer;
     margin :10px;
@@ -152,12 +127,12 @@ nav ul li a.active2{
     position: relative;
     overflow: hidden;
 }
-.btn1{
-    color: #000;
-
+.btn1{ 
+   color: #000;
 }
+
 .btn1:hover{
-    color: #fb044a;
+    color: #000;
 }
 .btn::before{
     content: "";
@@ -177,3 +152,7 @@ nav ul li a.active2{
 .btn1:hover::before{
     height: 180%;
 }
+
+
+
+
