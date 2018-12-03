@@ -10,7 +10,7 @@ a{color:inherit;text-decoration:none}
 	max-width:700px;
 	min-height:670px;
 	position:relative;
-	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/3/38/Wikipedia_User-ICON_byNightsight.png) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
@@ -142,4 +142,59 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
 	text-align:center;
+}
+
+#pswd_info {
+	background: #dfdfdf none repeat scroll 0 0;
+	color: #fff;
+	left: 500px;
+	position: absolute;
+	top: -530px;
+}
+#pswd_info h4{
+    background: black none repeat scroll 0 0;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 17px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#pswd_info ul {
+    list-style: outside none none;
+}
+#pswd_info ul li {
+   padding: 10px 45px;
+}
+
+
+
+.valid {
+	background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/vq43s2wib/valid.png") no-repeat scroll 2px 6px;
+	color: green;
+	line-height: 21px;
+	padding-left: 22px;
+}
+
+.invalid {
+	background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/olmaj1p8z/invalid.png") no-repeat scroll 2px 6px;
+	color: red;
+	line-height: 21px;
+	padding-left: 22px;
+}
+
+
+#pswd_info::before {
+    background: #dfdfdf none repeat scroll 0 0;
+    content: "";
+    height: 25px;
+    left: -13px;
+    margin-top: -12.5px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 25px;
+}
+#pswd_info {
+    display:none;
 }

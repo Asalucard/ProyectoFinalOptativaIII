@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="Css/Navbar.css">
         <link rel="stylesheet" href="Css/RegistroLogin.css">
         <link rel="stylesheet" href="Css/Sliders.css">
-        
+
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
@@ -21,7 +21,7 @@
         <!--NOP--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        
+
 
 
     </head>
@@ -47,19 +47,28 @@
                     </div>
                     <div class="menu">
                         <ul style="font-size: 150px;">
-                            <li><a class="btn1 btn animated pulse    " href="Main.html" >Principal</a></li>
-                            <li><a class="btn1 btn   pulse " href="Menu.html" >Menú</a></li>    
-                            <li><button class="btn btn1">SSSSS</button></li>                           
-                            <li><button   id="BtnRL" data-toggle="modal" data-target="#Registro" class="btn1 btn animated pulse">Registra/Logiar</button></li>
+                            <li><a name="ButonMain" class="btn1 btn animated pulse    " href="Main.html" >Principal</a></li>
+                            <li><a class="btn1 btn  animated pulse " href="Menu.html" >Menú</a></li>    
+                            <li><a class="btn btn1 animated pulse" href="">xxxxxx</a></li>                           
+                            <li><a class="btn1 btn animated pulse" href="" id="BtnRL" data-toggle="modal" data-target="#Registro" >Registra/Logiar</a></li>
                         </ul>                                        
                     </div>
                 </nav> 
             </header>         
         </div>
 
+        <script>
+            $(funtion(){
+            $('a.button').on('click', funtion(){
+            $('input[name=ButonMain]').addClass('animated shake').one('webkitAnimationEnd mozAnmationEnd MSAnimationEnd oanimationend animationend');
+            funtion(){
+            $(this).removeClass('animated shake');
+            });
+            });
+            });
+        </script>
 
-
-
+        <!--NAVBAR-->
 
         <section> 
 
@@ -97,23 +106,21 @@
         <script>
             $(function () {
 
-                $('#login-form-link').click(function (e) {
-                    $("#login-form").delay(100).fadeIn(100);
-                    $("#register-form").fadeOut(100);
-                    $('#register-form-link').removeClass('active');
-                    $(this).addClass('active');
-                    e.preventDefault();
-                });
-                $('#register-form-link').click(function (e) {
-                    $("#register-form").delay(100).fadeIn(100);
-                    $("#login-form").fadeOut(100);
-                    $('#login-form-link').removeClass('active');
-                    $(this).addClass('active');
-                    e.preventDefault();
-                });
-
+            $('#login-form-link').click(function (e) {
+            $("#login-form").delay(100).fadeIn(100);
+            $("#register-form").fadeOut(100);
+            $('#register-form-link').removeClass('active');
+            $(this).addClass('active');
+            e.preventDefault();
             });
-
+            $('#register-form-link').click(function (e) {
+            $("#register-form").delay(100).fadeIn(100);
+            $("#login-form").fadeOut(100);
+            $('#login-form-link').removeClass('active');
+            $(this).addClass('active');
+            e.preventDefault();
+            });
+            });
         </script>
 
         <script type="text/javascript">
@@ -121,55 +128,53 @@
             // Menu-toggle button
 
             $(document).ready(function () {
-                $(".menu-icon").on("click", function () {
-                    $("nav ul").toggleClass("showing");
-                });
+            $(".menu-icon").on("click", function () {
+            $("nav ul").toggleClass("showing");
             });
-
+            });
             // Scrolling Effect
 
             $(window).on("scroll", function () {
-                if ($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
+            if ($(window).scrollTop()) {
+            $('nav').addClass('black');
+            } else {
+            $('nav').removeClass('black');
+            }
             });
-
-
         </script>
 
         <script>
             // Get the modal
             var modal = document.getElementById('#Registro');
-
             // Get the button that opens the modal
             var btn = document.getElementById("BtnRL");
-
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
-
             // When the user clicks the button, open the modal 
             btn.onclick = function () {
-                modal.style.display = "block";
+            modal.style.display = "block";
             };
-
             // When the user clicks on <span> (x), close the modal
             span.onclick = function () {
-                modal.style.display = "none";
+            modal.style.display = "none";
             };
-
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
+            if (event.target === modal) {
+            modal.style.display = "none";
+            }
             };
         </script>
 
+
         <!-----------------------------------------------------SCRIPTS----------------------------------------------------------------->
 
-        <div class=" container">
+        
+        
+        
+        
+        <!---------------------------------------------------MODAL VENTANA SWICHT DEL REGISTRO Y LOGIN-------------------------------->
+        <div class="col-md-4 container">
 
             <!-- Modal -->
             <div class=" animated bounceIn modal fade" id="Registro" role="dialog">
@@ -180,12 +185,17 @@
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">X</button>
                         </div>
-                        
-                        <div class="modal-body">
-                            <div class="login-wrap">
+
+                        <div class=" modal-body">
+                            <div class=" login-wrap">
                                 <div class="login-html">
                                     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">INGRESAR</label>
                                     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">REGISTRAR</label>
+                                    
+                                    
+                                    
+                                                     <!--VENTANA SWICHT DEL LOGIN-->
+
                                     <div class="login-form">
                                         <div class="sign-in-htm">
                                             <div class="group">
@@ -207,6 +217,10 @@
                                             <div class="foot-lnk">
                                                 <a href="#forgot">Olvidaste tu contraseña?</a>
                                             </div>
+                                            
+                                            <!--VENTANA SWICHT DEL LOGIN-->
+
+                                           <!--VENTANA SWICHT DEL REGISTRO-->
                                         </div>
                                         <div class="sign-up-htm">
                                             <div class="group">
@@ -214,36 +228,111 @@
                                                 <input id="user" type="text" class="input">
                                             </div>
                                             <div class="group">
-                                                <label for="pass" class="label">Contraseña</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
+                                                <label for="pswd" class="label">Contraseña</label>
+                                                <input id="pswd" type="password" class="input" data-type="password">
+                                            </div>
+
+                                            <div class="group">
+                                                <label for="Email" class="label"> Email</label>
+                                                <input id="Email" type="text" class="input">
                                             </div>
                                             <div class="group">
-                                                <label for="pass" class="label">Repetir Contraseña</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
+                                                <label for="Direccion" class="label">Dirección</label>
+                                                <input id="Direccion" type="text" class="input">
+
                                             </div>
                                             <div class="group">
-                                                <label for="pass" class="label"> Email</label>
-                                                <input id="pass" type="text" class="input">
+                                                <input type="submit" class="button" value="Registrate">
                                             </div>
-                                            <div class="group">
-                                                <input type="submit" class="button" value="Sign Up">
-                                            </div>
-                                            <div class="hr"></div>
-                                            <div class="foot-lnk">
-                                                <label for="tab-1">Already Member?</label>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                                                     <!--VENTANA SWICHT DEL REGISTRO-->
+
+                            
+                            
+                            
+                            <!--REQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA-->
+                            <div class="col-md-4 animated fadeIn">
+                                <div class="aro-pswd_info">
+                                    <div id="pswd_info">
+                                        <h4>La contraseña tiene que tener: </h4>
+                                        <ul>
+                                            <li id="letter" class="invalid">Al menos <strong>una letra.</strong></li>
+                                            <li id="capital" class="invalid">Al menos <strong>una letra mayuscula.</strong></li>
+                                            <li id="number" class="invalid">Al menos <strong>un número.</strong></li>
+                                            <li id="length" class="invalid">Debes ser de <strong>8 caracteres</strong></li>
+                                            <li id="space" class="invalid">Puedes<strong> usar: [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--REQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA-->
 
 
+
+                            
+                             <!--SCRIPTREQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA-->
+
+
+                            <script>
+
+                                $(document).ready(function(){
+
+                                $('input[type=password]').keyup(function() {
+                                var pswd = $(this).val();
+                                //validate the length
+                                if (pswd.length < 8) {
+                                $('#length').removeClass('valid').addClass('invalid');
+                                } else {
+                                $('#length').removeClass('invalid').addClass('valid');
+                                }
+
+                                //validate letter
+                                if (pswd.match(/[A-z]/)) {
+                                $('#letter').removeClass('invalid').addClass('valid');
+                                } else {
+                                $('#letter').removeClass('valid').addClass('invalid');
+                                }
+
+                                //validate capital letter
+                                if (pswd.match(/[A-Z]/)) {
+                                $('#capital').removeClass('invalid').addClass('valid');
+                                } else {
+                                $('#capital').removeClass('valid').addClass('invalid');
+                                }
+
+                                //validate number
+                                if (pswd.match(/\d/)) {
+                                $('#number').removeClass('invalid').addClass('valid');
+                                } else {
+                                $('#number').removeClass('valid').addClass('invalid');
+                                }
+
+                                //validate space
+                                if (pswd.match(/[^a-zA-Z0-9\-\/]/)) {
+                                $('#space').removeClass('invalid').addClass('valid');
+                                } else {
+                                $('#space').removeClass('valid').addClass('invalid');
+                                }
+
+                                }).focus(function() {
+                                $('#pswd_info').show();
+                                }).blur(function() {
+                                $('#pswd_info').hide();
+                                });
+                                });
+
+                            </script>
 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!---------------------------------------------------MODAL VENTANA SWICHT DEL REGISTRO Y LOGIN-------------------------------->
 
 
 
