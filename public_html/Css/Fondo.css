@@ -38,10 +38,7 @@ section{
     width: 45%;
     height: 50%;
 }
-.ImagenAvatar{
-    width: 100%;
-    height: 100%;
-}
+
 
 .formAnimacion{
   animation-duration: 1s;

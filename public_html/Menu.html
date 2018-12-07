@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="Css/Fondo.css">
-  <link rel="stylesheet" href="Css/Navbar.css"> 
-  <link rel="stylesheet" href="Css/s.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
+    <head>
+        <title>Riko posho - Menu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="Css/animate.css">
+        <link rel="stylesheet" href="Css/Navbar.css">
+        <link rel="stylesheet" href="Css/RegistroLogin.css">
 
         <!--nop--> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--NOP--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <!--NOP--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <style>
-div.gallery {
- margin: 50px;
-  margin-top: 250px;
-  margin-bottom: 800px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 250px;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
-div.gallery img {
-        
 
-  width: 100%;
-  height: auto;
-}
+        <style>
+            header {
+                display:block;
+                padding:10px 0px;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 400px;
+                width: 333px;
+            }
+            body {
 
-div.desc {
-       
-        
-  padding: 15px;
-  text-align: center;
-}
-</style>
-</head>
 
-<body>
+                background: url(Imagenes/Chicken-Wallpapers-HD.jpg) no-repeat 50% 50%;
+                background-size: cover;
 
-    
-    
-         <!-- NAVBAR-->
+
+            }
+
+            footer {
+                position: relative;
+                margin-top: 450px;
+                height: 40px; 
+                padding:5px 0px;
+                clear: both;
+                background: #000;
+                text-align: center;
+                color: #fb044a;
+            }
+            img {
+                max-width: 100%;
+                height:  auto;
+            }
+
+        </style>
+
+
+        <style>
+            div.gallery {
+                margin: 40px;
+                margin-top: 350px;
+                margin-bottom: 350px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 250px;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+
+
+                width: 100%;
+                height: available;
+            }
+
+            div.desc {
+
+                text-align: center;
+                padding: 10px;
+
+            }
+
+        </style>
+
+
+
+    </head>
+
+    <body>
+
+
+
+        <!---------------------------------------------------- NAVBAR--------------------------------------->
         <div class="wrapper">
             <header>
                 <nav>
@@ -63,226 +107,317 @@ div.desc {
                     <div class="menu">
                         <ul style="font-size: 150px;">
                             <li><a name="ButonMain" class="btn1 btn animated pulse    " href="Main.html" >Principal</a></li>
-                            <li><a class="btn1 btn  animated pulse " href="Menu.html" >Menú</a></li>    
-                            <li><a class="btn btn1 animated pulse" href="">xxxxxx</a></li>                           
+                            <li><a class="btn1 btn  animated pulse " href="Menu.html" >Menú</a></li>                           
                             <li><a class="btn1 btn animated pulse" href="" id="BtnRL" data-toggle="modal" data-target="#Registro" >Registra/Logiar</a></li>
                         </ul>                                        
                     </div>
                 </nav> 
             </header>         
         </div>
+        <!--------------------------------------------------NAVBAR------------------------------------------>
 
 
 
-        <!--NAVBAR-->
-    
-    
-<div class="gallery">
-    <a  href="Menu.html">
-      <img src="Imagenes/pollo-asado.jpg" alt="Cinque Terre" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-  
-</div>
+        <!------------------------------------------------GALERRRYYYYYYYYYYYYYYYYYYYYY--------------------------------------------------->
 
-<div class="gallery">
-  <a target="_blank" href="forest.jpg">
-    <img src="forest.jpg" alt="Forest" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="lights.jpg">
-    <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="mountains.jpg">
-    <img src="mountains.jpg" alt="Mountains" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-        
-        <!--GALERRRYYYYYYYYYYYYYYYYYYYYY-->
-        
-        
-        
         <section>
-   <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="gallery">
+                <a  data-toggle="modal" id="BtnRL" data-target="#Registro">
+                    <img src="https://k41.kn3.net/4/4/1/1/A/5/CF9.jpg"  class="hover-shadow cursor" alt="Cinque Terre" width="300" height="200">
+                </a><BR>    
+                <h4 style="text-align: center; color:  #fb044a;">POLLO ENTERO</h4><BR>
+                <p style="text-align: center; color: #1161ee;">Pollo entero con papas a la francesa y verduras frescas</p>
+                <div style="font-family:courier; color: #fb044a; " class="desc">$100</div>
+            </div>
 
-  <!--Controls-->
-  <div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-  </div>
-  <!--/.Controls-->
+            <div class="gallery">
+                <a target="_blank" href="lights.jpg">
+                    <img src="http://www.comidacaseraloslagos.es/wp-content/uploads/2017/03/plato-combinado.jpg" alt="Northern Lights" width="300" height="200">
+                </a><br>
+                <h4 style="text-align: center; color:  #fb044a;">1/2 POLLO</h4><BR>
+                <p style="text-align: center; color: #1161ee;">1/2 Pollo con papas a la francesa y verduras frescas</p>
+                <div style="font-family:courier; color: #fb044a; " class="desc">$65</div>
+            </div>
 
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-    <li data-target="#multi-item-example" data-slide-to="1"></li>
-    <li data-target="#multi-item-example" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
+            <div class="gallery">
+                <a target="_blank" href="forest.jpg">
+                    <img src="https://www.goya.com/media/3578/caribbean-potato-salad.jpg?quality=80" alt="Forest" width="300" height="200">
+                </a><br>
+                <h4 style="text-align: center; color:  #fb044a;"> ENSALADA DE PATATA</h4><BR>
+                <p style="text-align: center; color: #1161ee;">1 LT de ensalda de papas</p>
+                <div style="font-family:courier; color: #fb044a; " class="desc">$65</div>
+            </div>
 
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+            <div class="gallery">
+                <a  data-toggle="modal" id="BtnRL" data-target="#Registro">
+                    <img src="https://tunicaragua.com/images/stories/virtuemart/product/Combo_de_Pollo_A_562a729183803.jpg"  class="hover-shadow cursor" alt="Cinque Terre" width="300" height="200">
+                </a> <br>
+                <h4 style="text-align: center; color:  #fb044a;">COMBO 1</h4><BR>
+                <p style="text-align: center; color: #1161ee;">Refresco de 2 litros</p>
+                <p style="text-align: center; color: #1161ee;">3 contenedores de 1/2 de Frijol</p>
+                <p style="text-align: center; color: #1161ee;">3 contenedores de 1/2 de Verdura</p>
+                <p style="text-align: center; color: #1161ee;">1/2 Kg de tortillas</p>
+                <div style="font-family:courier; color: #fb044a; " class="desc">$200</div>
 
-    <!--First slide-->
-    <div class="carousel-item active">
+            </div>
 
-      <div class="col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
+            <div class="gallery">
+                <a target="_blank" href="forest.jpg">
+                    <img src="http://pollorey.com/wp-content/uploads/2013/11/fam-pollofrito-tn.png" alt="Forest" width="300" height="200">
+                </a> <br>
+                <h4 style="text-align: center; color:  #fb044a;">COMBO 2</h4><BR>
+                <p style="text-align: center; color: #1161ee;">Refresco de 2 litros</p>
+                <p style="text-align: center; color: #1161ee;">6 Pierniles de pollo/p>
+                <p style="text-align: center; color: #1161ee;">2 ordenes de papas ala francesa</p>
+                <div style="font-family:courier; color: #fb044a; " class="desc">$200</div>           
+            </div>
+        </section>
+
+        <!------------------------------------------------GALERRRYYYYYYYYYYYYYYYYYYYYY--------------------------------------------------->
+
+
+
+
+
+
+        <!-----------------------------------------------------SCRIPTS----------------------------------------------------------------->
+        <script>
+            $(function () {
+
+                $('#login-form-link').click(function (e) {
+                    $("#login-form").delay(100).fadeIn(100);
+                    $("#register-form").fadeOut(100);
+                    $('#register-form-link').removeClass('active');
+                    $(this).addClass('active');
+                    e.preventDefault();
+                });
+                $('#register-form-link').click(function (e) {
+                    $("#register-form").delay(100).fadeIn(100);
+                    $("#login-form").fadeOut(100);
+                    $('#login-form-link').removeClass('active');
+                    $(this).addClass('active');
+                    e.preventDefault();
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+
+            // Menu-toggle button
+
+            $(document).ready(function () {
+                $(".menu-icon").on("click", function () {
+                    $("nav ul").toggleClass("showing");
+                });
+            });
+            // Scrolling Effect
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+            });
+        </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('#Registro');
+            // Get the button that opens the modal
+            var btn = document.getElementById("BtnRL");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            };
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            };
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
+
+
+
+        <!---------------------------------------SCRIPT REQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA----------------------------------------------->
+
+
+        <script>
+
+            $(document).ready(function () {
+
+                $('input[type=password]').keyup(function () {
+                    var pswd = $(this).val();
+                    //validate the length
+                    if (pswd.length < 8) {
+                        $('#length').removeClass('valid').addClass('invalid');
+                    } else {
+                        $('#length').removeClass('invalid').addClass('valid');
+                    }
+
+                    //validate letter
+                    if (pswd.match(/[A-z]/)) {
+                        $('#letter').removeClass('invalid').addClass('valid');
+                    } else {
+                        $('#letter').removeClass('valid').addClass('invalid');
+                    }
+
+                    //validate capital letter
+                    if (pswd.match(/[A-Z]/)) {
+                        $('#capital').removeClass('invalid').addClass('valid');
+                    } else {
+                        $('#capital').removeClass('valid').addClass('invalid');
+                    }
+
+                    //validate number
+                    if (pswd.match(/\d/)) {
+                        $('#number').removeClass('invalid').addClass('valid');
+                    } else {
+                        $('#number').removeClass('valid').addClass('invalid');
+                    }
+
+                    //validate space
+                    if (pswd.match(/[^a-zA-Z0-9\-\/]/)) {
+                        $('#space').removeClass('invalid').addClass('valid');
+                    } else {
+                        $('#space').removeClass('valid').addClass('invalid');
+                    }
+
+                }).focus(function () {
+                    $('#pswd_info').show();
+                }).blur(function () {
+                    $('#pswd_info').hide();
+                });
+            });
+
+        </script>
+
+        <!-----------------------------------------------------SCRIPTS----------------------------------------------------------------->
+
+
+
+
+
+        <!---------------------------------------------------MODAL VENTANA SWICHT DEL REGISTRO Y LOGIN-------------------------------->
+        <div class="col-md-4 container">
+
+            <!-- Modal -->
+            <div class=" animated bounceIn modal fade" id="Registro" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                        </div>
+
+                        <div class=" modal-body">
+                            <div class=" login-wrap">
+                                <div class="login-html">
+                                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">INGRESAR</label>
+                                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">REGISTRAR</label>
+
+
+
+                                    <!-------------------------------VENTANA SWICHT DEL LOGIN--------------------------------->
+
+                                    <div class="login-form">
+                                        <div class="sign-in-htm">
+                                            <div class="group">
+                                                <label for="user" class="label">Usuario</label>
+                                                <input id="user" type="text" class="input">
+                                            </div>
+                                            <div class="group">
+                                                <label for="pass" class="label">Contraseña</label>
+                                                <input id="pass" type="password" class="input" data-type="password">
+                                            </div>
+                                            <div class="group">
+                                                <input id="check" type="checkbox" class="check" checked>
+                                                <label for="check"><span class="icon"></span>Recordarme</label>
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" value="Ingresar">
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="foot-lnk">
+                                                <a href="#forgot">Olvidaste tu contraseña?</a>
+                                            </div>
+
+
+                                            <!----------------------------------------------VENTANA SWICHT DEL LOGIN------------------------------------------->
+
+                                            <!--VENTANA SWICHT DEL REGISTRO-->
+                                        </div>
+                                        <div class="sign-up-htm">
+                                            <div class="group">
+                                                <label for="user" class="label">Usuario</label>
+                                                <input id="user" type="text" class="input">
+                                            </div>
+                                            <div class="group">
+                                                <label for="pswd" class="label">Contraseña</label>
+                                                <input id="pswd" type="password" class="input" data-type="password">
+                                            </div>
+
+                                            <div class="group">
+                                                <label for="Email" class="label"> Email</label>
+                                                <input id="Email" type="text" class="input">
+                                            </div>
+                                            <div class="group">
+                                                <label for="Direccion" class="label">Dirección</label>
+                                                <input id="Direccion" type="text" class="input">
+
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" value="Registrate">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------------------------------VENTANA SWICHT DEL REGISTRO----------------------------------------->
+
+
+
+
+                            <!-----------------------------------REQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA-------------------------->
+                            <div class="col-md-4 animated fadeIn">
+                                <div class="aro-pswd_info">
+                                    <div id="pswd_info">
+                                        <h4>La contraseña tiene que tener: </h4>
+                                        <ul>
+                                            <li id="letter" class="invalid">Al menos <strong>una letra.</strong></li>
+                                            <li id="capital" class="invalid">Al menos <strong>una letra mayuscula.</strong></li>
+                                            <li id="number" class="invalid">Al menos <strong>un número.</strong></li>
+                                            <li id="length" class="invalid">Debes ser de <strong>8 caracteres</strong></li>
+                                            <li id="space" class="invalid">Puedes<strong> usar: [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-------------------------------------------REQUERIMIENTOS DE LA CONTRASEÑAS DE LA CONTRASEÑA-------------------------------------------------------->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <!---------------------------------------------------MODAL VENTANA SWICHT DEL REGISTRO Y LOGIN-------------------------------->
 
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
 
-    </div>
-    <!--/.First slide-->
 
-    <!--Second slide-->
-    <div class="carousel-item">
-
-      <div class="col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!--/.Second slide-->
-
-    <!--Third slide-->
-    <div class="carousel-item">
-
-      <div class="col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 clearfix d-none d-md-block">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!--/.Third slide-->
-
-  </div>
-  <!--/.Slides-->
-
-</div>
-<!--/.Carousel Wrapper-->
-            </section>
-        
-        
-        
-        
-        
-<footer>
+        <footer>
             Optativa 2 
         </footer>
-</body>
+    </body>
 
 </html>
 
- 

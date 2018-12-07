@@ -32,7 +32,7 @@ nav {
 nav ul {
       line-height: 60px;
       list-style: none;
-      background: rgba(0,0,0,0);
+      background: rgba(0,0,0,0.03);
       overflow: hidden;
       color: #fff;
       padding: -35px;
@@ -118,7 +118,7 @@ nav ul li a:focus{
 .btn{
     
     border: 1px solid #3498db;
-    background: #3498db;
+    background: #fff;
     padding: 15px 20px;
     font-family: "montserrat";
     cursor: pointer;
@@ -127,22 +127,17 @@ nav ul li a:focus{
     position: relative;
     overflow: hidden;
 }
-.btn1{ 
-   color: #000;
-}
 
-.btn1:hover{
-    color: #000;
-}
 .btn::before{
     content: "";
     position: absolute;
     left:0;
     width: 100%;
     height: 0%;
-    background: #fb044a;
+    background: #000;
     z-index: -1;  
     transition: 0.8s;
+    color: #fff;
 }
 
 .btn::before{
@@ -152,7 +147,13 @@ nav ul li a:focus{
 .btn1:hover::before{
     height: 180%;
 }
+.btn1{ 
+   color: #000;
+}
 
+.btn1:hover{
+    color: #fff;
+}
 
 
 
