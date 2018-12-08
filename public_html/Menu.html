@@ -4,11 +4,10 @@
         <title>Riko posho - Menu</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="Css/animate.css">
         <link rel="stylesheet" href="Css/Navbar.css">
         <link rel="stylesheet" href="Css/RegistroLogin.css">
-
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!--nop--> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--NOP--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <!--NOP--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,12 +29,8 @@
                 width: 333px;
             }
             body {
-
-
                 background: url(Imagenes/Chicken-Wallpapers-HD.jpg) no-repeat 50% 50%;
                 background-size: cover;
-
-
             }
 
             footer {
@@ -59,15 +54,15 @@
         <style>
             div.gallery {
                 margin: 40px;
-                margin-top: 350px;
-                margin-bottom: 350px;
-                border: 1px solid #ccc;
+                margin-top: 450px;
+                margin-bottom: 50px;
+                border: 3px solid #000;
                 float: left;
-                width: 250px;
+                width: 300px;
             }
 
             div.gallery:hover {
-                border: 1px solid #777;
+                border: 5px solid #fff;
             }
 
             div.gallery img {
@@ -84,7 +79,97 @@
 
             }
 
+
         </style>
+
+        <style>
+            .container2 {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+
+            /* Hide the browser's default checkbox */
+            .container2 input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .container2:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a blue background */
+            .container2 input:checked ~ .checkmark {
+                background-color: #2196F3;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .container2 input:checked ~ .checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .container2 .checkmark:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .label2{
+                margin-left: 45px;
+            }
+
+            .BtnOrdenar{
+                margin-left: 800px;
+                height: 50px;
+                width: 250px;
+                margin-bottom: 150px;
+                background-color: #6BD124;
+                border-radius: 5px;
+                font-size: x-large;
+            }
+
+
+
+            .BtnOrdenar:hover {
+                background-color: #3e8e41;
+                color: white;
+            }
+        </style>
+
 
 
 
@@ -106,8 +191,9 @@
                     </div>
                     <div class="menu">
                         <ul style="font-size: 150px;">
-                            <li><a name="ButonMain" class="btn1 btn animated pulse    " href="Main.html" >Principal</a></li>
-                            <li><a class="btn1 btn  animated pulse " href="Menu.html" >Menú</a></li>                           
+
+                            <li><a class="btn1 btn animated pulse" href="Main.html" >Principal</a></li>
+                            <li><a class="btn1 btn animated pulse" href="Menu.html" >Menú</a></li>                           
                             <li><a class="btn1 btn animated pulse" href="" id="BtnRL" data-toggle="modal" data-target="#Registro" >Registra/Logiar</a></li>
                         </ul>                                        
                     </div>
@@ -121,35 +207,49 @@
         <!------------------------------------------------GALERRRYYYYYYYYYYYYYYYYYYYYY--------------------------------------------------->
 
         <section>
-            <div class="gallery">
-                <a  data-toggle="modal" id="BtnRL" data-target="#Registro">
+            <div class="gallery" style="align-items: center;">
+                <a href="">
                     <img src="https://k41.kn3.net/4/4/1/1/A/5/CF9.jpg"  class="hover-shadow cursor" alt="Cinque Terre" width="300" height="200">
                 </a><BR>    
                 <h4 style="text-align: center; color:  #fb044a;">POLLO ENTERO</h4><BR>
                 <p style="text-align: center; color: #1161ee;">Pollo entero con papas a la francesa y verduras frescas</p>
                 <div style="font-family:courier; color: #fb044a; " class="desc">$100</div>
+
+                <label class="label2 container2">Seleccionar
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
             </div>
 
+
             <div class="gallery">
-                <a target="_blank" href="lights.jpg">
+                <a  href="">
                     <img src="http://www.comidacaseraloslagos.es/wp-content/uploads/2017/03/plato-combinado.jpg" alt="Northern Lights" width="300" height="200">
                 </a><br>
                 <h4 style="text-align: center; color:  #fb044a;">1/2 POLLO</h4><BR>
                 <p style="text-align: center; color: #1161ee;">1/2 Pollo con papas a la francesa y verduras frescas</p>
                 <div style="font-family:courier; color: #fb044a; " class="desc">$65</div>
+                <label class="label2 container2">Seleccionar
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
             </div>
 
             <div class="gallery">
-                <a target="_blank" href="forest.jpg">
+                <a  href="">
                     <img src="https://www.goya.com/media/3578/caribbean-potato-salad.jpg?quality=80" alt="Forest" width="300" height="200">
                 </a><br>
                 <h4 style="text-align: center; color:  #fb044a;"> ENSALADA DE PATATA</h4><BR>
                 <p style="text-align: center; color: #1161ee;">1 LT de ensalda de papas</p>
                 <div style="font-family:courier; color: #fb044a; " class="desc">$65</div>
+                <label class="label2 container2">Seleccionar
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
             </div>
 
             <div class="gallery">
-                <a  data-toggle="modal" id="BtnRL" data-target="#Registro">
+                <a  href="">
                     <img src="https://tunicaragua.com/images/stories/virtuemart/product/Combo_de_Pollo_A_562a729183803.jpg"  class="hover-shadow cursor" alt="Cinque Terre" width="300" height="200">
                 </a> <br>
                 <h4 style="text-align: center; color:  #fb044a;">COMBO 1</h4><BR>
@@ -158,20 +258,49 @@
                 <p style="text-align: center; color: #1161ee;">3 contenedores de 1/2 de Verdura</p>
                 <p style="text-align: center; color: #1161ee;">1/2 Kg de tortillas</p>
                 <div style="font-family:courier; color: #fb044a; " class="desc">$200</div>
+                <label class="label2 container2">Seleccionar
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
 
             </div>
 
             <div class="gallery">
-                <a target="_blank" href="forest.jpg">
+                <a href="">
                     <img src="http://pollorey.com/wp-content/uploads/2013/11/fam-pollofrito-tn.png" alt="Forest" width="300" height="200">
                 </a> <br>
                 <h4 style="text-align: center; color:  #fb044a;">COMBO 2</h4><BR>
                 <p style="text-align: center; color: #1161ee;">Refresco de 2 litros</p>
                 <p style="text-align: center; color: #1161ee;">6 Pierniles de pollo/p>
                 <p style="text-align: center; color: #1161ee;">2 ordenes de papas ala francesa</p>
-                <div style="font-family:courier; color: #fb044a; " class="desc">$200</div>           
+                <div style="font-family:courier; color: #fb044a; " class="desc">$200</div>   
+                <label class="label2 container2">Seleccionar
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
             </div>
+
+            <button class="BtnOrdenar btn" onclick="document.getElementById('id01').style.display = 'block'" >ORDENAR</button>
+
         </section>
+
+        <div class="w3-container">
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-teal"> 
+                        <span onclick="document.getElementById('id01').style.display = 'none'" 
+                              class="w3-button w3-display-topright">&times;</span>
+                        <h2 style="text-align: center;">ORDEN</h2>
+                    </header>
+                    <div class="w3-container">
+                        <p>jalar lo que se esta seleccionando</p>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                        <p>RIKO POSHO</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
 
         <!------------------------------------------------GALERRRYYYYYYYYYYYYYYYYYYYYY--------------------------------------------------->
 
@@ -220,7 +349,7 @@
                 }
             });
         </script>
-
+<!---------------------------------------SCRIPT DE LA VENTANA DE LOGIN------------------------------------------------>
         <script>
             // Get the modal
             var modal = document.getElementById('#Registro');
@@ -335,15 +464,15 @@
                                                 <input id="user" type="text" class="input">
                                             </div>
                                             <div class="group">
-                                                <label for="pass" class="label">Contraseña</label>
-                                                <input id="pass" type="password" class="input" data-type="password">
+                                                <label for="pass2" class="label">Contraseña</label>
+                                                <input id="pass2" type="password" class="input" data-type="password">
                                             </div>
                                             <div class="group">
                                                 <input id="check" type="checkbox" class="check" checked>
                                                 <label for="check"><span class="icon"></span>Recordarme</label>
                                             </div>
                                             <div class="group">
-                                                <input type="submit" class="button" value="Ingresar">
+                                                <input type="submit" class=" button" value="Ingresar">
                                             </div>
                                             <div class="hr"></div>
                                             <div class="foot-lnk">
@@ -353,7 +482,7 @@
 
                                             <!----------------------------------------------VENTANA SWICHT DEL LOGIN------------------------------------------->
 
-                                            <!--VENTANA SWICHT DEL REGISTRO-->
+                                            <!---------------------------------------VENTANA SWICHT DEL REGISTRO-------------------------------------------------->
                                         </div>
                                         <div class="sign-up-htm">
                                             <div class="group">
@@ -418,6 +547,5 @@
             Optativa 2 
         </footer>
     </body>
-
 </html>
 
